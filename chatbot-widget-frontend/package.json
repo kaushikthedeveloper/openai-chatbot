@@ -1,0 +1,12 @@
+{
+  "name": "chatbot-widget",
+  "version": "1.0.0",
+  "description": "Chat GPT based chatbot widget for demo",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "python3 -m http.server"
+  },
+  "author": "kaushik",
+  "license": "ISC"
+}
