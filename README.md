@@ -1,6 +1,8 @@
 # openai-chatbot
 Chatbot running on AWS Lambda that uses OpenAI GPT3.5 model and a demo chat window to query the bot
 
+It uses GPT3.5 based Completion model to answer queries based on relevant data feed provided as context
+
 ## Front End
 Built on Vanilla HTML, JS, CSS
 
@@ -30,4 +32,4 @@ $ curl -XPOST "http://localhost:9000/2015-03-31/functions/function/invocations" 
 1. [fe] API Endpoint of newly created lambda in the front end
 2. [be] OpenAI keys
 3. [be] AWS Credentials and bucket name to use for storing the context data
-4. [be] scrapped-data.csv in the s3 bucket which will hold the scrapped data (example csv file attached)
+4. [be] scrapped-data.csv in the s3 bucket which will hold the scrapped data to be used as context for GPT models to analyse and answer on basis of (example csv file attached)
