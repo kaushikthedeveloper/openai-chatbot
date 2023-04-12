@@ -153,7 +153,7 @@ def answer_question(
         )
         return response["choices"][0]["text"].strip()
     except Exception as e:
-        logger.error("Failed Exception", exc_info=e)
+        logger.error("Failed to query the completion text", exc_info=e)
         return ""
 
 
